@@ -1,0 +1,7 @@
+class Array
+  def mymap(&prc)
+    mapped = []
+    mapped << self.each { |el| prc.call(el) }
+    return mapped
+  end
+end
